@@ -1,0 +1,43 @@
+.portfolio
+{
+    background-color: wheat;
+}
+.portfolio-body-content img
+{
+    background-color: black;
+    height: 400px;
+    width: 200px;
+    block-size: 400px 200px;
+}
+.portfolio-body
+{
+    display: inline-block;
+}
+.portfolio-body-content img
+{
+    height: 130px;
+    width: 130px;
+    border-radius: 100%;
+}
+.banner
+{
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(file:///F:/Pictures/aluminium-rim-4124325__340.webp);
+    background-repeat: no-repeat;
+    position: center center;
+    background-size: 100% 100%;
+    color: white;
+    height: 400px;
+    width: 455%;
+    margin-left: 45px;
+    /* height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(https://cdn.pixabay.com/photo/2018/05/20/10/13/racing-3415413__340.jpg);
+    background-repeat: no-repeat;
+    position: center center;
+    background-size: 100% 100%; */
+
+}
+.banner-content h1,h2
+{
+    text-align: center;
+}

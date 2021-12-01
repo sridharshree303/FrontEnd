@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}  
+html,body
+{
+    width: 100%;
+}  
+nav ul li
+{
+    display: inline;
+}
+ul
+{
+    display: inline;
+    margin: 346px;
+
+}
+nav ul li a 
+{
+    text-decoration: none;
+    margin-left: 56px ;
+}
+.logo
+{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    color: black;
+}
+.contact-btn
+{
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+nav ul li a:hover
+{
+    text-decoration: underline;
+    color: red;
+}
+
+nav
+{
+    background-color: orange;
+    padding: 13px 5px;
+    position: sticky; 
+    /* position: fixed;  */
+    top: 0px;
+    width: 100%;
+}
+.contact-btn :hover
+{
+    background-color: black;
+}
+.banner
+{
+    height: 500px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(https://cdn.pixabay.com/photo/2018/05/20/10/13/racing-3415413__340.jpg);
+    background-repeat: no-repeat;
+    position: center center;
+    background-size: 100% 100%;
+
+}
+.banner-content
+{
+    background-color: rgba(0,0,0,0.6);
+    height: 350px;
+    width: 450px;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 420px;
+    padding: 50px;
+    border-top: 5px solid rgb(27,185,54);
+    z-index: 1;
+}
+.banner-content
+{
+    line-height: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.banner-content button
+{
+    border: 2px solid rgb(27,185,54);
+    padding: 5px,10px;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    left: 100px;
+}
+.banner-content button:hover
+{
+    background-color: aqua;
+    transition: 2s;
+}
+.formula
+{
+    margin: 30px;
+    padding: 30px;
+}
+.formula-child
+{
+    width: 500px;
+    display: inline-block;
+    padding: 10px;
+}
+.formula-child-2
+{
+    margin-left: 10px;
+}
+.formula-child h1
+{
+    font-size: 42px;
+}
+.formula-child li
+{
+    margin-top: 15px;
+    list-style-type: none;
+}
+.fas
+{
+    color: gray;
+}
+.cards
+{
+    background-color:aquamarine;
+    padding: 30px;
+    height: 500px;
+}
+.card-body
+{
+    background-color:white;
+    height: 400px;
+    width: 350px;
+    display: inline-block;
+    margin-left: 30px;  
+    margin-right: 20px; 
+}
+.card-body-content
+{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+.fa-wine-glass
+{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+}
+.fa-trophy
+{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;   
+}
+.fa-baby
+{
+    font-size: 30px;
+    height: 50px;
+    width: 50px;   
+}
+.card-body:hover
+{
+    box-shadow:  4px 4px 34px 15px grey;
+}
+.card-body:hover .fa-wine-glass
+{
+    background-color: rgba(165, 42, 42, 0.623);
+}
+.card-body:hover .fa-trophy
+{
+    background-color: rgba(165, 42, 42, 0.514);
+}
+.card-body:hover .fa-baby
+{
+    background-color: rgba(165, 42, 42, 0.527); 
+}
+.lastdiv
+{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: white;    
+}
+.lastdiv-body
+{
+    display: inline-block;
+    padding: 25px;
+}
+.lastdiv-body-cont
+{
+    position: relative;
+    top: 20px;
+    
+}
+.lastdiv-body-cont ul a
+{
+    display: block;
+    text-decoration: none;
+}
+.lastdiv-body-cont ul a:hover
+{
+    text-decoration: underline;
+}
+.fab 
+{
+    font-size: 30px;
+}
+.clients-body-content h1
+{
+    position: relative;
+    width: 100%;
+    left: 167%;
+   /* text-align: center; */
+   text-decoration: underline; 
+}
+.clients-body-content img
+{
+    height: 200px;
+    width: 350px;
+}
+.clients-body-content img:hover
+{
+    background-color: brown;
+    box-shadow: 4px 4px 34px 15px grey;
+}
+.clients-body
+{
+    display: inline-block;
+}
+
+
+
+

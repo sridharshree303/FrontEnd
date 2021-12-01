@@ -1,0 +1,12 @@
+body
+{
+    background-color: aqua;
+    background-image: none;
+    
+}
+p
+{
+    color:red;
+    font-size: 100px;
+    font-style: inherit;
+}
