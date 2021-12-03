@@ -1,0 +1,258 @@
+a:list {
+    /*  changes color for hypertext */
+    color: red;
+}
+
+a.hover {
+    /* color changes on cursor point*/
+    color: blue;
+}
+
+a.Visited {
+    /* changes to color after onetime use*/
+    color: green;
+}
+
+p::first-line {
+    /* first line will become in colour */
+    color: yellow;
+}
+
+p::selection {
+    /* changes to color on selection */
+    color: green;
+    background-color: blue;
+}
+
+h1::first-letter {
+    /* highlights first letter */
+    color: purple;
+    background-color: yellow;
+}
+
+li:nth-child(2n) {
+    /* filter particular Lists */
+    color: blue;
+}
+
+font[color] {
+    /* filter particular element */
+    color: green;
+}
+
+font[size] {
+    /* filters size */
+    color: violet;
+}
+
+
+/* border elements */
+
+h1 {
+    /* border with particular design */
+    border-width: 2px;
+    border-style: dotted;
+    /*solid,dotted,dashed,double,groove */
+    border-color: green;
+}
+
+h1 {
+    /* border with particular design on all sides */
+    border-width: 20px, 10px, 7px, 3px;
+    border-style: dotted;
+    border-color: green;
+    border-radius: 3px;
+}
+
+h1 {
+    /* border in a single line*/
+    border: 5px solid gray;
+}
+
+
+/* color properties */
+
+h1 {
+    /* setting background and text color */
+    color: rgb(255, 0, 0);
+    background-color: aqua;
+}
+
+
+/* backgroud style -- color/image */
+
+ul {
+    /* setting up particular bg color for */
+    color: #808080;
+    background-color: aquamarine;
+}
+
+ul {
+    /* sets background image for unorderlist */
+    background-image: url('tulips.jpg');
+}
+
+body {
+    /* sets full image on background */
+    background-image: url('tulips.jpg');
+}
+
+body {
+    /* single time repeation of image */
+    background-image: url('tulips.jpg');
+    background-repeat: no-repeat;
+    /* repeat/round/repeat-x/repeat-y etc,. */
+}
+
+body {
+    /* small image adustments in sides */
+    background-image: url('tulips.jpg');
+    background-repeat: repeat;
+    background-position: right;
+    /* background-position: left ;
+    background-position: right bottom;
+    background-position: left bottom;
+    background-position: center ; */
+}
+
+
+/* margins and paddings */
+
+p {
+    /* paragraph all sides are adjusted to -10 px */
+    margin: 10px;
+}
+
+p {
+    /* paragraph all sides are adjusted to -10 px */
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    margin-right: 25px;
+}
+
+p {
+    /* border and margin for paragraph */
+    border: 3px solid green;
+    margin: 10px 20px 10px;
+    /* margin: auto;
+    margin: 10px 20px; */
+}
+
+p {
+    /* padding and auto margin based on width to center */
+    border: 3px solid green;
+    width: 800px;
+    margin: auto;
+    padding: 10px 20px 15px 10px;
+    /* padding-left: 10px;
+    padding-top: 15px;             //padding
+    padding-bottom: 20px;
+    padding-right: 25px; */
+}
+
+ul {
+    margin: 50px;
+}
+
+li {
+    margin: 15px;
+    /* margin: inherit; */
+    /* inherits parent margins */
+}
+
+
+/* font styles  */
+
+p {
+    font-family: Arial, Helvetica, sans-serif, 'Times New Roman', Times, serif;
+    font-style: italic, oblique;
+    font-size: 25px;
+    font-weight: normal, bold;
+    /*etc,.*/
+}
+
+
+/* Text styles */
+
+h1 {
+    /* text styles */
+    color: blue;
+    text-align: center;
+    /* right/left */
+    text-decoration: underline;
+    /* overline */
+    text-transform: capitalize;
+    /* uppercase,lowercase */
+    text-shadow: 5px 5px green;
+}
+
+p {
+    /* paragraph styles */
+    text-indent: 40px;
+    /* paragraph starts with some space */
+    letter-spacing: 2px;
+    /* b/w letters gaps */
+    word-spacing: 4px;
+}
+
+
+/* how to place multiple images in background */
+
+body {
+    /* inserted 3 images in a same page */
+    background-image: url(image1.jpg), url(image2.jpg), url(image3.jpg);
+    background-repeat: no-repeat no-repeat no-repeat;
+    background-position: left bottom, center, right top;
+    /* background-size:400px 400px ; */
+    background-size: 20% 20% 20%;
+}
+
+
+/* overflow properties*/
+
+p {
+    /* auto arrange using justify */
+    height: 200px;
+    width: 700px;
+    text-align: justify;
+    border: 5px dashed blue;
+}
+
+p {
+    height: 200px;
+    width: 700px;
+    text-align: justify;
+    border: 5px dashed blue;
+    overflow: scroll/hidden/auto;
+    /* creates scrollbar and adjust using justify" */
+}
+
+
+/*  float & clear */
+
+img {
+    float: right;
+    /*auto,left */
+}
+
+
+/* for example if i have to divide pagragraphs with border */
+
+#first {
+    width: 600px;
+    border: 5px solid red;
+    float: left;
+}
+
+#second {
+    width: 600px;
+    border: 3px solid blue;
+    float: right;
+}
+
+#third {
+    border: 3px solid yellow;
+    clear: left;
+    /*both*/
+}
