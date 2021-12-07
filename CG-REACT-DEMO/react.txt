@@ -1,0 +1,120 @@
+Most important concepts in React
+● Components
+● JSX
+● State
+● Props
+-----------------------------------
+-> an open-source JavaScript library for building user interfaces or UI
+components
+-> development of single-page or mobile applicaons.
+------------------------------------
+-> npx create-react-app <app-name>
+-> cd <app-name>
+-> npm start
+-------------------------------------
+localhost:3000.
+-------------------------------------
+types of components in react 
+  1. function components 
+  2. class components 
+-------------------------------------
+Descripon
+● package.json Contains dependencies for the project
+● node_modules Contain necessary libraries
+● index.html The "single page" that renders on screen, contains root
+● manifest.json Contains the project metadata
+● index.js Gets access to root and renders it (connects index.html and App.js)
+● App.js First component that appears on screen
+● App.test.js For tesng
+-----------------------------------------
+What is JSX?
+● JSX stands for JavaScript XML.
+● It is a syntax extension to JavaScript.
+● It is a templang language for React.
+● It allows us to write HTML in React.
+--------------------------------------------
+React.createElement() Method hps://reactjs.org/docs/react-without-jsx.html
+● This method achieves the same effect as JSX, without using JSX.
+● This method takes 3 or more arguments.
+Syntax
+React.createElement
+	('HTML element', CSS style, 'text to be rendered));
+
+-----------------------------------------------
+Restricons in JSX
+● The code above is not actually HTML.
+● Although tags like div or h1 are used, they are internally managed by React library.
+● Since class is a reserved keyword in JavaScript, className should be used.
+● As a best pracce, The render method should return only one JSX element.
+● Mulple elements should be wrapped into one parent <div> element.
+-----------------------------------------------
+Components in React hps://reactjs.org/docs/components-and-props.html
+● React app is made up of components.
+● They are independent and reusable pieces of code.
+● They return HTML* via a render funcon.*JSX
+
+Type of components
+● Class component
+● Funcon component
+
+--------------------------------------------------------------
+Funcon component
+function Welcome(props) {
+return <h1>Hello, {props.name}</h1>;
+}
+export default Welcome;
+
+-------------------------------------
+Class component
+class Welcome extends React.Component {
+render() {
+return <h1>Hello, {this.props.name}</h1>;
+}
+}
+export default Welcome
+----------------------------------------------------------------
+Class component
+To create class component -
+● Create a class that extends React.Component
+● Define constructor() method
+● Define render() method
+● Return JSX code in the render() method
+● Expert the class as export default.*
+------------------------------------------
+Use the component -
+● Import the component in the App.js file.
+● Use the component as an HTML element.
+● Ensure the import and element name is in uppercase.
+● React idenfies this as a custom component.
+● The lowercase elements are reserved for HTML.
+
+---------------------------------------------------
+When creang components, you have the choice between two different ways:
+Funconal components (aka "presentaonal", "dumb" or "stateless" components)
+const cmp = () => { return <div>some JSX</div> }
+
+
+(using ES6 arrow funcons as shown here is recommended but oponal)
+Class-based components (aka "containers", "smart" or "stateful" components)
+class Cmp extends Component { render () {return <div>some JSX</div>}}
+
+
+As a best pracce, use funcon components, wherever applicable.
+-----------------------------------------------------
+State
+● State is a built-in object in class component.
+● It is used to create and manage component data.
+● It is inialized in the constructor method.
+● When the state object changes, the component re-renders.
+● Unlike props, components cannot pass data with state.
+
+-------------------------------------------------------------
+
+
+
+
+
+
+
+
+
