@@ -1,13 +1,15 @@
 // import { useState } from "react";
 import { useEffect, useState } from "react";
+import AddEmp from "./components/AddEmp";
 // import EmpData from "./components/EmpData";
 import Header from "./components/Header";
 import Hello from "./components/Hello";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import SpringBootData from "./components/SpringBootData";
 
 const App = () => {
-    console.log('Parent component');
+    // console.log('Parent component');
     //   const num = 10;
     //   const myData = { abc: 15, def: 25 }
     //   const myArray = [10, 20, 30];
@@ -34,8 +36,10 @@ const App = () => {
         div className = "container" >
         <
         p className = "display-4 text-primary" > CG React App < /p> <
-        Hello / > { /* <Login /> */ } <
-        Register / > { /* <p>Child data in parent component: {dataFromChild} </p> */ } { /* This will not work */ } { /* <p>{myData} </p> */ } { /* This will work  */ } {
+        Hello / >
+
+        { /* <Login /> */ } { /* <Register /> */ } { /* <AddEmp/> */ } { /* {GetAll} */ } <
+        SpringBootData / > { /* <p>Child data in parent component: {dataFromChild} </p> */ } { /* This will not work */ } { /* <p>{myData} </p> */ } { /* This will work  */ } {
             /* <p>{myData.abc} </p>
                     <p>{myData.def} </p>
                     <p>{myArray}</p>
