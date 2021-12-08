@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render( < App / > , document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 
 // ReactDOM.render( <App></App> , arg2);
@@ -19,7 +19,7 @@ ReactDOM.render( < App / > , document.getElementById('root'));
 reportWebVitals();
 
 
-//import React from 'react';
+// import React from 'react';
 // import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
