@@ -26,7 +26,7 @@ const SpringBootData = () => {
     }
 
     const submitGetAllEmps = () => {
-        axios.get(`http://localhost:8082/getallemps`)
+        axios.get(`http://localhost:8082/emp/getallemps`)
             .then((response) => {
                 setEmpList(response.data);
                 console.log(response.data);
@@ -39,7 +39,7 @@ const SpringBootData = () => {
 
     const submitGetEmpById = (evt) => {
         console.log(emp.eid);
-        axios.get(`http://localhost:8082/getempbyid/${emp.eid}`)
+        axios.get(`http://localhost:8082/emp/getempbyid/${emp.eid}`)
             .then((response) => {
                 setEmp(response.data);
             })
@@ -52,7 +52,7 @@ const SpringBootData = () => {
 
     const submitAddEmp = (evt) => {
         evt.preventDefault();
-        axios.post(`http://localhost:8082/addemp`, newEmpObj)
+        axios.post(`http://localhost:8082/emp/addemp`, newEmpObj)
             .then((response) => {
                 setDisplayEmpObj(response.data);
                 alert('Employee added successfully.');
