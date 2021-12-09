@@ -50,7 +50,7 @@ const Register = (props) => {
                             placeholder="Enter username"
                             value={appUser.userName}
                             onChange={handleAppUser}
-                            required
+                            required  autoFocus
                         />
                         <input
                             type="password"

@@ -11,7 +11,7 @@ const Login = (props) => {
     const [appUser, setAppUser] = useState(new AppUser());
     const [credentials, setCredentials] = useState('');
 
-    const handleAppUser = (event) => {
+    const handleAppUser = (event) => {   // any changes made it will recognize
         console.log(event.target.name);
         console.log(event.target.value);
         setAppUser({
@@ -49,7 +49,7 @@ const Login = (props) => {
                             placeholder="Enter username"
                             value={appUser.userName}
                             onChange={handleAppUser}
-                            required
+                            required  autoFocus
                         />
                         <input
                             type="password"
@@ -75,6 +75,7 @@ const Login = (props) => {
                             className="form-control btn btn-primary mb-3"
                             value="Login"
                             onClick={submitAppUser}
+
                         />
                     </div>
                 </form>

@@ -110,7 +110,17 @@ State
 
 -------------------------------------------------------------
 
+Important tips:
 
+
+--->  "start":"set PORT=3003 && react-scripts start"
+
+--->  "proxy":"http://localhost:8082"
+
+
+AppUser.js --> LOGIN.js -->  routes.js  -->  App.js  --> Index.js --> Index.html
+
+req & res
 
 
 

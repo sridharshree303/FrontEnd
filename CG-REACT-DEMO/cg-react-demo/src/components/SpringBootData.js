@@ -68,7 +68,7 @@ const SpringBootData = () => {
 
             <p className="display-4 text-primary mt-3">Spring Boot Data</p>
             <p>Search Employee By Id</p>
-            <input type="number" id="eid" name="eid" value={emp.eid} onChange={handleEmp} placeholder="Emter eid to search" />
+            <input type="number" id="eid" name="eid" value={emp.eid} onChange={handleEmp} placeholder="Emter eid to search"  autoFocus/>
             <input type="submit" name="Find Employee" onClick={submitGetEmpById} />
             <p className="text-primary">{emp.eid} {emp.firstName} {emp.salary}</p>
             <p>----------------</p>
