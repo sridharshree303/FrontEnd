@@ -2,14 +2,13 @@ import Routes from "./Routes";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-light">
       <Routes />
     </ div>
   );
 }
 
 export default App;
-
 
 //   console.log('Parent component');
 //   const num = 10;

@@ -2,17 +2,31 @@ const Logout = () => {
 
 
 
-    return ( <
-        div className = "mt-3 mb-3" >
-        <
-        h1 className = "display-4 text-primary" > Logout Component < /h1>
+    return (
+        <div className="mt-3 mb-3">
+            <h1 className="display-4 text-primary" >Logout Component</h1>
 
 
-        <
-        /div>
+        </div>
     );
 }
 export default Logout;
+
+
+
+// const Logout = () => {
+
+
+
+//     return (
+//         <div className="mt-3 mb-3">
+//             <h1 className="display-4 text-primary" >Logout Component</h1>
+
+
+//         </div>
+//     );
+// }
+// export default Logout;
 
 
 
