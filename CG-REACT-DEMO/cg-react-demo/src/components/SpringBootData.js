@@ -60,67 +60,84 @@ const SpringBootData = () => {
         evt.preventDefault();
     }
 
-    return (
-        <div>
+    return ( <
+        div >
 
-            <p className="display-4">Spring Boot Data</p>
-            <p>Search Employee By Id</p>
-            <input type="number" id="eid" name="eid" value={emp.eid} onChange={handleEmp} placeholder="Emter eid to search" />
-            <input type="submit" name="Find Employee" onClick={submitGetEmpById} />
-            <p>{emp.eid} {emp.firstName} {emp.salary}</p>
-            <p>----------------</p>
-            <div>
-                <p>Add New Employee</p>
-                <form onSubmit={submitAddEmp}>
-                    <div>
-                        <input
-                            type="text"
-                            id="firstName"
-                            name="firstName"
-                            value={newEmpObj.firstName}
-                            onChange={handleAddEmp}
-                            placeholder="Enter First Name" />
-                        <input
-                            type="number"
-                            id="salary"
-                            name="salary"
-                            value={newEmpObj.salary}
-                            onChange={handleAddEmp}
-                            placeholder="Enter salary" />
-                        <input
-                            // type="button"
-                            type="submit"
-                            value="Add Employee"
-                        // onClick={submitAddEmp} 
-                        />
-                    </div>
-                </form>
-                <p>{newEmpObj.eid} {newEmpObj.firstName} {newEmpObj.salary}</p>
-            </div>
-            <p>----------------</p>
-            <div>
-                <div>
-                    <p>Get All Employees</p>
-                    <input
-                        type="button"
-                        value="Search All Employees"
-                        onClick={submitGetAllEmps}
-                    />
-                </div>
-                <div>
-                    {/* {empList} */}
-                    {/* {empList.map((arg, arg2)=> { return the processed data })} */}
-                    {empList.map((emp, k) => {
-                        return (
-                            <div k={k}><td>{emp.eid}</td><td> {emp.firstName}</td><td> {emp.salary}</td></div>
-                        )
-                    })}
-                </div>
+        <
+        h1 className = "display-4" > Spring Boot Data < /h1> <
+        p > Search Employee By Id < /p> <
+        input type = "number"
+        id = "eid"
+        name = "eid"
+        value = { emp.eid }
+        onChange = { handleEmp }
+        placeholder = "Emter eid to search" / >
+        <
+        input type = "submit"
+        name = "Find Employee"
+        onClick = { submitGetEmpById }
+        /> <
+        p > { emp.eid } { emp.firstName } { emp.salary } < /p> <
+        p > -- -- -- -- -- -- -- -- < /p> <
+        div >
+        <
+        p > Add New Employee < /p> <
+        form onSubmit = { submitAddEmp } >
+        <
+        div >
+        <
+        input type = "text"
+        id = "firstName"
+        name = "firstName"
+        value = { newEmpObj.firstName }
+        onChange = { handleAddEmp }
+        placeholder = "Enter First Name" / >
+        <
+        input type = "number"
+        id = "salary"
+        name = "salary"
+        value = { newEmpObj.salary }
+        onChange = { handleAddEmp }
+        placeholder = "Enter salary" / >
+        <
+        input
+        // type="button"
+        type = "submit"
+        value = "Add Employee"
+        // onClick={submitAddEmp} 
+        /
+        >
+        <
+        /div> <
+        /form> <
+        p > { newEmpObj.eid } { newEmpObj.firstName } { newEmpObj.salary } < /p> <
+        /div> <
+        p > -- -- -- -- -- -- -- -- < /p> <
+        div >
+        <
+        div >
+        <
+        p > Get All Employees < /p> <
+        input type = "button"
+        value = "Search All Employees"
+        onClick = { submitGetAllEmps }
+        /> <
+        /div> <
+        div > { /* {empList} */ } { /* {empList.map((arg, arg2)=> { return the processed data })} */ } {
+            empList.map((emp, k) => {
+                return ( <
+                    div k = { k } > < td > { emp.eid } < /td><td> {emp.firstName}</td > < td > { emp.salary } < /td></div >
+                )
+            })
+        } <
+        /div>
 
-                <p>----------------</p>
-            </div>
+        <
+        p > -- -- -- -- -- -- -- -- < /p> <
+        /div>
 
-        </div>
+        <
+        /div>
     );
 }
 
