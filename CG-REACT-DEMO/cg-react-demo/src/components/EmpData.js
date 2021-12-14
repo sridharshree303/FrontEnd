@@ -1,12 +1,10 @@
-// props - arguments to a component 
-// pass data - 
-// 1. from parent component to child component - props 
-// 2. from child compoment to parent component - ??
-
 import { getEmpByIdService, getAllEmpsService } from "./services/EmpService";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { getEmpById, getAllEmps } from '../redux/EmpSlice';
+
+// import { Store } from "redux";
+// import { Provider } from "react";
 
 const EmpData = () => {
 
@@ -28,7 +26,7 @@ const EmpData = () => {
             .catch(() => {
                 alert(`Employee with ${eid} not found.`);
             });
-            console.log(Object.keys(empList));
+        console.log(Object.keys(empList));
         setEid('');
     }
 
@@ -45,21 +43,21 @@ const EmpData = () => {
     }
 
     return (
-        <div>
+        <div className="container">
             <h1 className="display-4 text-primary mt-3 mb-3" >Employee Component</h1>
             <p>Fetch data from backend, store it in redux store and get it to component</p>
 
             <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
                 <p>Find employee by id</p>
                 <form className="form form-group form-primary" onSubmit={submitGetEmpById}>
-                    <input className="form-control mt-3" type="number" id="eid" name="eid" value={eid} onChange={handleEmp} placeholder="Enter eid to search" autoFocus />
+                    <input className="form-control mt-3" type="number" id="eid" name="eid" value={eid} onChange={handleEmp} placeholder="Enter eid to search" autoFocus required />
                     <input className="form-control mt-3 btn btn-primary" type="submit" value="Find Employee" />
                 </form>
                 <p>Data from store: {empDataFromStore.eid} {empDataFromStore.firstName} {empDataFromStore.salary}</p>
             </div>
 
             <div>
-                <div className="col-6 border border-light shadow p-3 mb-5 bg-white">
+                <div className="col-4 border border-light shadow p-3 mb-5 bg-white">
                     <p>Find all employees</p>
                     <div>
                         <form className="form form-group form-primary">
@@ -95,10 +93,6 @@ const EmpData = () => {
     );
 }
 export default EmpData;
-
-
-
-
 
 
 

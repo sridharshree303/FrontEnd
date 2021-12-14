@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { Link, /* useHistory */} from 'react-router-dom';
+import { useState, /*useEffect*/ } from 'react';
 import axios from "axios";
 import AppUser from './models/AppUser';
 
-const Login = (props) => {
+const Login = () => {
 
-    const history = useHistory();
+    // const history = useHistory();
 
     const [appUser, setAppUser] = useState(new AppUser());
     const [credentials, setCredentials] = useState('');
 
-    const handleAppUser = (event) => {   // any changes made it will recognize
+    const handleAppUser = (event) => {
         console.log(event.target.name);
         console.log(event.target.value);
         setAppUser({
@@ -21,14 +21,16 @@ const Login = (props) => {
     };
 
     const submitAppUser = (event) => {
-
         axios.post(`http://localhost:8082/login`, appUser)
             .then((response) => {
                 console.log(response.data);
-                localStorage.setItem('appUser', appUser);
-                alert("Success");
-                history.push('/home');
+                sessionStorage.setItem('isUserLoggedIn', true);
+                alert('Success');
+                window.location.assign('/home');
+                // history.push('/home');
             }).catch((error) => {
+                sessionStorage.setItem('isUserLoggedIn', false);
+                sessionStorage.clear();
                 console.log(error.response);
                 setCredentials("Enter proper credentials.");
             });
@@ -49,7 +51,8 @@ const Login = (props) => {
                             placeholder="Enter username"
                             value={appUser.userName}
                             onChange={handleAppUser}
-                            required  autoFocus
+                            autoFocus
+                            required
                         />
                         <input
                             type="password"
@@ -59,7 +62,9 @@ const Login = (props) => {
                             className="form-control mb-3"
                             placeholder="Enter password"
                             value={appUser.password}
-                            onChange={handleAppUser} />
+                            onChange={handleAppUser}
+                            required
+                        />
                         <div class="form-group">
                             <select class="form-control mb-3" name="role" id="role" onChange={handleAppUser}>
                                 <option value="Role">Select a role</option>
@@ -75,7 +80,6 @@ const Login = (props) => {
                             className="form-control btn btn-primary mb-3"
                             value="Login"
                             onClick={submitAppUser}
-
                         />
                     </div>
                 </form>

@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import axios from 'axios';
 
@@ -8,7 +6,7 @@ const Hello = () => {
     const [message, setMessage] = useState();
 
     useEffect(() => {
-        console.log('Hello useEffect');
+        // console.log('Hello useEffect');
         setMessage('dummy value meanwhile...');
 
         // axios.get('http://localhost:8082/hello')
@@ -25,7 +23,7 @@ const Hello = () => {
     }, []);
 
     return (
-        <div>
+        <div className="container">
             <h1 className="display-4 text-primary mt3">Hello</h1>
             <p> Data from backend: {message}</p>
         </div>
@@ -33,8 +31,6 @@ const Hello = () => {
 }
 
 export default Hello;
-
-
 // import { useEffect, useState } from "react";
 // import axios from 'axios';
 

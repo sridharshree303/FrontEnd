@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState,/* useEffect*/ } from 'react';
 import axios from "axios";
 import AppUser from './models/AppUser';
 // import $ from 'jquery';
 
-const Register = (props) => {
+const Register = () => {
 
     const history = useHistory();
 
