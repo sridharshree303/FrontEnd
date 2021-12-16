@@ -1,3 +1,4 @@
+import Login from "./components/Login";
 import Routes from "./Routes";
 
 const App = () => {
