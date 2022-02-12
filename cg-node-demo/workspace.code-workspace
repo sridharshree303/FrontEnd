@@ -1,9 +1,6 @@
 {
     "folders": [
 		{
-			"path": "..\\Html"
-		},
-		{
 			"path": "..\\Html Learning"
 		},
 		{
@@ -16,9 +13,6 @@
 			"path": "..\\Js learning"
 		},
 		{
-			"path": "..\\Lab"
-		},
-		{
 			"path": "..\\Html-Css-webpage"
 		},
 		{
@@ -26,12 +20,6 @@
 		},
 		{
 			"path": "."
-		},
-		{
-			"path": "..\\..\\cg-node-demo-oct12"
-		},
-		{
-			"path": "..\\..\\e-voting-frontend-main"
 		}
 	],
     "settings": {}

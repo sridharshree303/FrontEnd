@@ -41,7 +41,7 @@ const Login = () => {
             <div className="col-4 mt-3" >
                 <h1 className="display-4 text-primary">Login</h1>
                 <form className="form form-group form-dark " onSubmit={submitAppUser}>
-                    <div><P>this is login</P>
+                    <div>
                         <input
                             type="text"
                             className="form-control"
