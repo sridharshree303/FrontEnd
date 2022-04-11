@@ -47,7 +47,7 @@ const Login = () => {
                             className="form-control"
                             name="userName"
                             id="userName"
-                            className="form-control mb-3"
+                            class="form-control mb-3"
                             placeholder="Enter username"
                             value={appUser.userName}
                             onChange={handleAppUser}
@@ -59,7 +59,7 @@ const Login = () => {
                             className="form-control"
                             name="password"
                             id="password"
-                            className="form-control mb-3"
+                            class="form-control mb-3"
                             placeholder="Enter password"
                             value={appUser.password}
                             onChange={handleAppUser}
